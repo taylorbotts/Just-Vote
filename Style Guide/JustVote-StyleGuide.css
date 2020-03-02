@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add following CSS in case Avenir Next is not available as a font-family.
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url(fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url(fonts/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url(fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: bold;
+}
+
+*/
+
+body {
+  background: #e6e6e6;
+  width: 1140px;
+  margin: 0 auto;
+  font-family: "Avenir Next", sans-serif;
+  color: #052460;
+  font-size: 14px;
+}
+
+.section {
+  width: 100%;
+  padding: 10px;
+  margin: 1em auto;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #f04e36;
+}
+
+.inner-box {
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.boldfont {
+  font-family: "Avenir Next";
+  font-size: 50px;
+  font-weight: bold;
+}
+.demifont {
+  font-family: "Avenir Next";
+  font-size: 50px;
+  font-weight: 600;
+}
+.regfont {
+  font-family: "Avenir Next";
+  font-size: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Avenir Next";
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.colors {
+  width: 100%;
+  display: inline-block;
+}
+
+.color-scheme {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  font-size: 18px;
+  background-color: grey;
+  color: white;
+}
+
+.navy {
+  background: #052460;
+}
+
+.red {
+ background: #f04e36;
+}
+
+.muted-white {
+  background: #f8f8f8;
+  color: #052460;
+}
+
+.muted-red {
+  background: #f26648;
+}
+
+.muted-navy {
+  background: #2b3c73;
+}
+
+.red-button {
+  padding: 20px 40px;
+  display: inline-block;
+  border-radius: 7px;
+  margin: 1em;
+  text-decoration: none;
+  color: #f8f8f8;
+  background-color: #f04e36;
+  font-weight: 600;
+}
+
+.red-button:hover {
+  background: #f26648;
+}
+
+.navy-button {
+  padding: 20px 40px;
+  display: inline-block;
+  border-radius: 7px;
+  margin: 1em;
+  text-decoration: none;
+  color: #f8f8f8;
+  background-color: #052460;
+  font-weight: 600;
+}
+
+.navy-button:hover {
+  background: #2b3c73;
+}
+
+.white-button-r {
+  padding: 20px 40px;
+  display: inline-block;
+  border-radius: 7px;
+  margin: 1em;
+  text-decoration: none;
+  color: #f04e36;
+  background-color: #f8f8f8;
+  font-weight: 600;
+}
+
+.white-button-r:hover {
+  background: #f26648;
+  color: #f8f8f8;
+}
+
+.white-button-n {
+  padding: 20px 40px;
+  display: inline-block;
+  border-radius: 7px;
+  margin: 1em;
+  text-decoration: none;
+  color: #052460;
+  background-color: #f8f8f8;
+  font-weight: 600;
+}
+
+.white-button-n:hover {
+  background: #2b3c73;
+  color: #f8f8f8;
+}
+
+.icon {
+  padding: 10px;
+  text-align: center;
+  margin: 1em 0;
+  float: left;
+}
