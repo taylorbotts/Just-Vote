@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+@import 'normalize.css';
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Lato;
+}
+
+nav {
+  background-color: #fefefe;
+  width: 100%;
+  overflow: hidden;
+  padding: .5rem 1rem;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.25);
+}
+
+nav img {
+  float: left;
+  width: 15%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1rem;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: .5rem 1rem;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-weight: 700;
+}
+
+section {
+  padding: 5%;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+.hero {
+  background-color: #333;
+  height: 70vh;
+  min-height: 400px;
+  color: #fefefe;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: rgb(181, 181, 181);
+  padding: .75rem 3rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.card {
+  box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,0.2);
+  min-width: 250px;
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  height: auto;
+}
+
+.card-caption {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.hero-banner {
+  background-color: #333;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.hero-banner img {
+   object-fit: contain;
+}
+
+form.contact label {
+  display: block;
+}
+
+form.contact input[type="text"],
+form.contact textarea {
+  margin: .25rem 0 1rem 0;
+  padding: .5rem;
+  border: 1px solid #dfdfdf;
+  width: 80%;
+  max-width: 1000px;
+}
+
+footer {
+  background-color: #333;
+  padding: 5%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+footer i {
+  color: #fefefe;
+  font-size: 4rem;
+  padding: 5%;
+}
