@@ -17,24 +17,24 @@ nav {
   box-shadow: 0 .25rem .5rem rgba(0,0,0,.25);
 }
 
-nav img {
+#desktopNav img {
   float: left;
   width: 11%;
   padding: 1rem;
 }
 
-nav ul {
+#desktopNav ul {
   list-style-type: none;
   margin: 0;
   padding: 0 1rem;
   float: right;
 }
 
-nav ul li {
+#desktopNav ul li {
   float: left;
 }
 
-nav ul li a {
+#desktopNav ul li a {
   display: block;
   padding: 1rem 1rem;
   text-align: center;
@@ -42,54 +42,22 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
+#desktopNav ul li a:hover {
   background-color: #e9e9e9;
 }
 
-nav a.active {
+#desktopNav a.active {
   font-weight: 700;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-  color: #333;
-  display: block;
-}
-
-.dropdown .dropbtn {
-  margin: 0;
-  font-size: 1rem;
-  border: none;
-  outline: none;
-  padding: 1rem;
-  background-color: inherit;
-  font-family: inherit;
-}
-
-.dropdown-content {
+#mobileNav {
   display: none;
-  position: absolute;
-  background-color: #fefefe;
-  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,.25);
-  z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
-  padding: 1rem;
+img {
+
   display: block;
-  text-decoration: none;
-  color: #333;
-}
-
-.dropdown-content a:hover,
-.dropdown:hover {
-  background-color: #e9e9e9;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+  margin: auto;
 }
 
 section {
@@ -128,7 +96,7 @@ h3 {
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 5%;
+  gap: 2rem;
 }
 
 .card {
@@ -151,7 +119,8 @@ h3 {
 .partners {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5%;
+  gap: 2rem;
+  height: auto;
 }
 
 .hero-banner {
@@ -180,27 +149,28 @@ form textarea {
   max-width: 1000px;
 }
 
-section.take-action-cards {
+.take-action-cards {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 5%;
+  gap: 2rem;
 }
 
-div.candidates {
+.candidates {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 5%;
+  gap: 2rem;
 }
-
-div.candidates div p {
+ 
+.candidates div p {
   text-align: center;
 }
 
 footer {
+  margin-top: 5rem;
   background-color: #333;
   padding: 5%;
   display: grid;
-  gap: 5%;
+  gap: 2rem;
   grid-template-columns: 1fr 2fr;
   justify-content: space-around;
   align-items: center;
@@ -215,4 +185,40 @@ footer i {
   color: #fefefe;
   font-size: 3rem;
   padding: 5%;
+}
+
+@media screen and (max-width: 760px) {
+
+  #desktopNav {
+    display: none;
+  }
+
+  #mobileNav {
+    display: block;
+  }
+
+  #mobileNavContent {
+    
+  }
+
+  .about {
+    grid-template-columns: auto;
+  }
+
+  .about-us-text {
+    grid-row: 1;
+  }
+
+  .partners {
+    grid-template-columns: auto;
+  }
+
+  .take-action-cards {
+    grid-template-columns: auto;
+  }
+
+  .candidates {
+    grid-template-columns: auto;
+  }
+
 }
