@@ -61,7 +61,9 @@ img {
 }
 
 section {
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 200px;
 }
 
 h3 {
@@ -187,6 +189,7 @@ footer i {
   padding: 5%;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 760px) {
 
   #desktopNav {
@@ -222,3 +225,8 @@ footer i {
   }
 
 }
+=======
+.cart {
+  margin-left: 100px;
+}
+>>>>>>> 831d0c84d7726854a9e8e99942070afc34dbd136
