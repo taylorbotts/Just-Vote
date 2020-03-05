@@ -256,7 +256,8 @@ footer i {
     margin-top: .3rem;
   }
   
-  .nav-btn:hover {
+  .nav-btn:hover,
+  a.active {
     background-color: #e9e9e9;
   }
 
