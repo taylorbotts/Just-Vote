@@ -65,6 +65,10 @@ section {
   padding-right: 5%;
   margin-bottom: 200px;
 }
+article {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 h3 {
   padding: 1rem 0;
@@ -123,6 +127,23 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   height: auto;
+}
+.about_title {
+  text-align: center;
+}
+.banner-i{
+    color: #fefefe;
+    font-size: 3rem;
+    padding: 5%;
+  }
+.section-about{
+    margin-bottom:0px;
+  }
+.team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin-bottom: 25px;
 }
 
 .hero-banner {
