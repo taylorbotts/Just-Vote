@@ -41,6 +41,8 @@ nav img {
   text-align: center;
   color: #333;
   text-decoration: none;
+  font-weight: 400;
+  transition: .5s;
 }
 
 #desktopNav ul li a:hover {
@@ -97,6 +99,23 @@ h3 {
   border: none;
   border-radius: .5rem;
   cursor: pointer;
+  transition: .5s;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: rgb(196, 66, 45);
+}
+
+a:not(.button) {
+  color: #F04E36;
+  text-decoration: none;
+}
+
+a:not(.button):hover {
+  font-weight: 700;
 }
 
 .about {
@@ -147,7 +166,8 @@ h3 {
 }
 
 .hero-banner {
-  background-color: #333;
+  background-color: #2B3C73;
+  color: #f8f8f8;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 2fr;
