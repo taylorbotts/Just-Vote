@@ -89,10 +89,13 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero.home {
   height: 70vh;
+  background-image: url("../img/home-banner.jpg");
 }
 
 .button {
@@ -108,7 +111,7 @@ h3 {
   background-color: #F26648;
 }
 
-.about {
+.about-home {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
@@ -153,6 +156,15 @@ h3 {
     grid-template-columns: auto auto auto;
     gap: 2rem;
     margin-bottom: 25px;
+}
+
+.hero.about {
+  background-image: url("../img/about-banner.jpg");
+}
+
+section.history {
+  background: #052460;
+  color: #f8f8f8;
 }
 
 .hero-banner {
@@ -204,7 +216,7 @@ form textarea {
 
 footer {
   margin-top: 5rem;
-  background-color: #333;
+  background: #052460;
   padding: 5%;
   display: grid;
   gap: 2rem;
