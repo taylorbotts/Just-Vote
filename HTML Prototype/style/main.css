@@ -74,6 +74,10 @@ article {
   padding-right: 10%;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 h3 {
   padding: 1rem 0;
 }
@@ -151,11 +155,16 @@ h3 {
 .section-about{
     margin-bottom:0px;
   }
+
 .team {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 25px;
+}
+
+.team p {
+  text-align: center;
 }
 
 .hero.about {
@@ -165,6 +174,13 @@ h3 {
 section.history {
   background: #052460;
   color: #f8f8f8;
+}
+
+.follow-us {
+  color: #f8f8f8;
+  background: #F04E36;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .hero-banner {
@@ -177,6 +193,10 @@ section.history {
 
 .hero-banner img {
    object-fit: contain;
+}
+
+.hero.take-action {
+  background-image: url("../img/take-action-banner.jpg")
 }
 
 form label {
@@ -196,8 +216,38 @@ form textarea {
 
 .take-action-cards {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+}
+
+.action-card {
+  background: #F04E36;
+  color: #f8f8f8;
+  padding: 3rem 2rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 5%;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.action-card:hover {
+  box-shadow: .25rem 1rem 1rem rgba(0,0,0,.25);
+  transform: translateY(-1rem);
+}
+
+.action-card i {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.take-action-form {
+  background: #052460;
+  color: #f8f8f8;
+}
+
+.hero.candidates {
+  background-image: url("../img/candidates-banner.jpg");
 }
 
 .candidates {
@@ -210,12 +260,15 @@ form textarea {
   text-align: center;
 }
 
+.hero.shop {
+  background-image: url("../img/shop-banner.jpg");
+}
+
 .cart {
   margin-left: 120px;
 }
 
 footer {
-  margin-top: 5rem;
   background: #052460;
   padding: 5%;
   display: grid;
@@ -238,7 +291,7 @@ footer i {
 
 .second-heading {
   color: #F04E36;
-  font-size: 45px;
+  font-size: 3rem;
 }
 .shop-item {
   color: #F04E36;
@@ -363,12 +416,21 @@ footer i {
     grid-template-columns: auto;
   }
 
+  .team {
+    grid-template-columns: 1fr;
+  }
+
   .take-action-cards {
     grid-template-columns: auto;
   }
 
   .candidates {
     grid-template-columns: auto;
+  }
+
+  form input, form select, form input[type="text"],
+  form input[type="email"] {
+    width: 100%;
   }
 
 }
