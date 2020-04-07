@@ -17,11 +17,11 @@ nav {
   box-shadow: 0 .25rem .5rem rgba(0,0,0,.25);
 }
 
-nav img {
+.nav-logo {
   float: left;
   width: 11%;
   min-width: 50px;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 #desktopNav ul {
@@ -307,9 +307,9 @@ footer i {
     display: none;
   }
 
-  nav img {
+  .nav-logo {
     width: 22%;
-    min-width: 50px;
+    min-width: 80px;
   }
 
   #mobileNav {
