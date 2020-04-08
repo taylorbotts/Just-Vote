@@ -184,7 +184,28 @@ h3 {
 .hero.about {
   background-image: url("../img/about-banner.jpg");
 }
+.modal-content{
+  position: absolute!important;
+  left: 50%!important;
+  top: 50%!important;
+  margin-left: -250px!important;
+  margin-top: 150px!important;
 
+  max-width: 100%!important;
+  width:750px!important;
+
+  border: 1px solid #888!important;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+  -webkit-animation-name: animatetop!important;
+  -webkit-animation-duration: 0.4s!important;
+  animation-name: animatetop!important;
+  animation-duration: 0.4s!important;
+}
+.candidates img:hover{
+    background-color:#000;
+    opacity:0.5;
+    border-radius:30px;
+}
 
 section.history {
   background: #052460;
