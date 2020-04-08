@@ -6,17 +6,19 @@ body * {
 }
 
 body {
-  font-size: 16px;
-  font-family: Lato;
+  font-size: 16px!important;
+  font-family: Lato!important;
 }
 
 nav {
   background-color: #fefefe;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden!important;
   box-shadow: 0 .25rem .5rem rgba(0,0,0,.25);
 }
-
+html{
+  font-size: 16px!important;
+}
 .nav-logo {
   float: left;
   width: 11%;
@@ -25,24 +27,24 @@ nav {
 }
 
 #desktopNav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 1rem;
-  float: right;
+  list-style-type: none!important;
+  margin: 0!important;
+  padding: 0 1rem!important;
+  float: right!important;
 }
 
 #desktopNav ul li {
-  float: left;
+  float: left!important;
 }
 
 #desktopNav ul li a {
-  display: block;
-  padding: 1rem 1rem;
-  text-align: center;
-  color: #333;
-  text-decoration: none;
-  font-weight: 400;
-  transition: .5s;
+  display: block!important;
+  padding: 1rem 1rem!important;
+  text-align: center!important;
+  color: #333!important;
+  text-decoration: none!important;
+  font-weight: 400!important;
+  transition: .5s!important;
 }
 
 #desktopNav ul li a:hover {
@@ -139,6 +141,7 @@ h3 {
   padding: 1rem;
   text-align: center;
   width: 100%;
+  display:grid;
 }
 .card-caption a{
   color:white;
@@ -181,9 +184,7 @@ h3 {
 .hero.about {
   background-image: url("../img/about-banner.jpg");
 }
-.modal-content{
-  width: 650px;
-}
+
 
 section.history {
   background: #052460;
@@ -285,7 +286,7 @@ form textarea {
 footer {
   background: #052460;
   padding: 5%;
-  display: grid;
+  display: grid!important;
   gap: 2rem;
   grid-template-columns: 1fr 2fr;
   justify-content: space-around;
@@ -337,7 +338,7 @@ footer i {
 @media screen and (max-width: 760px) {
 
   #desktopNav {
-    display: none;
+    display: none!important;
   }
 
   .nav-logo {
@@ -346,12 +347,12 @@ footer i {
   }
 
   #mobileNav {
-    display: block;
-    position: fixed;
+    display: block!important;
+    position: fixed!important;
   }
 
   #mobileNav input[type='checkbox'] {
-    display: none;
+    display: none!important;
   }
 
   .nav-btn {
