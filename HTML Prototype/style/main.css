@@ -49,13 +49,13 @@ html{
 
 #desktopNav ul li a:hover {
   background-color: #F26648;
-  color: #F8F8F8;
+  color: #F8F8F8 !important;
 }
 
 #desktopNav a.active {
   font-weight: 700;
   background-color: #F04E36;
-  color: #F8F8F8;
+  color: #F8F8F8!important;
 }
 
 #mobileNav {
@@ -292,9 +292,21 @@ form textarea {
   gap: 2rem;
 }
 
+.shop {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
 .candidates div p {
   text-align: center;
 }
+
+.shop div p {
+  text-align: center;
+}
+
+
 
 .hero.shop {
   background-image: url("../img/shop-banner.jpg");
@@ -337,9 +349,10 @@ footer i {
   margin-bottom: 40px;
 }
 .partner-name {
-  color:black;
+  color: #F04E36;
   font-size: 20px;
   margin-top: 30px;
+  text-align: center;
 }
 .img-shadow {
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2)
@@ -347,7 +360,7 @@ footer i {
 .candidate-name {
   margin-top: 20px;
   color: #F04E36;
-  font-size: 20px;
+  font-size: 25px;
 }
 .card-home {
   background-color: #F04E36;
@@ -482,6 +495,22 @@ footer i {
   .candidates {
     grid-template-columns: auto;
   }
+
+.shop {
+  grid-template-columns: auto;
+}
+  .about-home {
+    display: block;
+  }
+
+  .card-home {
+    margin-left: 0px;
+  }
+
+  .hero-banner {
+    display:block;
+  }
+
 
   form input, form select, form input[type="text"],
   form input[type="email"] {
