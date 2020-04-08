@@ -180,6 +180,9 @@ h3 {
 .hero.about {
   background-image: url("../img/about-banner.jpg");
 }
+.modal-content{
+  width: 650px;
+}
 
 section.history {
   background: #052460;
